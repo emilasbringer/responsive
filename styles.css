@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* elements */
 body {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
     background: white;
-    
+    font-family: 'Open Sans', sans-serif;
   }
   
   img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
   } 
   
   a {
@@ -27,6 +29,7 @@ body {
   }
   
   h2 {
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
   }
@@ -93,7 +96,13 @@ body {
   .lead {
     font-size: 1.2rem;
   }
-  
+
+  .map {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }  
+
   /* helpers */
   .h-100 {
     height: 100%;
@@ -102,12 +111,17 @@ body {
     width: 100%;
   }
   
+  .maxw-30 {
+      max-width: 30%;
+  }
+
   .flex {
     display: flex;
   }
   
   .align-center {
     align-items: center;
+    margin: auto;
   }
   
   .justify-between {
@@ -133,3 +147,18 @@ body {
   .text-uppercase {
     text-transform: uppercase;
   }
+
+
+  @media (min-width: 700px) {
+    .cards{
+        display: flex;
+    }
+
+  }
+
+  @media (min-width: 1560px) {
+    .card {
+        max-width: 505px;
+        margin: auto;
+    }
+}
