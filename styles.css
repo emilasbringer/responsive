@@ -4,7 +4,7 @@
 body {
     font-size: 1rem;
     line-height: 1.5;
-    margin: 0;
+    margin: 0px;
     background: white;
     font-family: 'Open Sans', sans-serif;
   }
@@ -16,12 +16,24 @@ body {
   
   a {
     text-decoration: none;
+    color: inherit;
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: inherit;
   }
   
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
   h1 {
     text-align: center;
     font-size: 2.4rem;
@@ -77,22 +89,23 @@ body {
   .logo {
     width: 20%;
     min-width: 80px;
-    border: solid 1px;
+    border-right: solid 1px;
     text-align: center;
+  }
+
+  .logoimg {
+    height: 100%;
   }
 
   .headeritem {
       width: 10vw;
       min-width: 80px;
-      border: solid 1px;
+      border-right: solid 1px;
       text-align: center;
   }
 
   .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    margin: 0px;
   }
   
   .nav {
@@ -156,9 +169,21 @@ body {
     text-transform: uppercase;
   }
 
+  .darkbg {
+    background-color: darkgrey;
+  }
+
   @media (min-width: 0px) {
       .map {
           width: 100%;
+      }
+
+      .lead {
+        font-size: 2.6rem;
+      }
+      
+      .card {
+        font-size: 1.6rem;
       }
 
   }
@@ -167,10 +192,21 @@ body {
   @media (min-width: 1000px) {
     .cards{
         display: flex;
+        
+    }
+
+    .card {
+      margin: 0px 15px 0px 15px;
+      font-size: 1.5rem;  
     }
 
     .map {
         width: 60%;
+    }
+
+    .lead {
+      margin: 0px 15px 50px 15px;
+      font-size: 1.5rem;
     }
   }
 
